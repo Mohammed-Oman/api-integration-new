@@ -1,0 +1,81 @@
+.main{
+    background-color: rgb(16,20,21);
+    overflow: hidden;
+    height: 2400vh;
+    justify-content: center;
+    padding: 20px 0px;
+    }
+    .app{
+        display: inline-block;
+    }
+    .headings{
+        margin-left: 6%;
+        color: white;
+        padding-top: 0px;
+    }
+    .text{
+        text-align: center;
+        margin: 20px auto;
+        background-color:rgb(20,27,35);
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 20px;
+    }
+    .page-btn{
+        display: flex;
+        list-style-type: none;
+        margin-top: 3%;
+        margin-left: 30%;
+    }
+    #srchbox{
+        margin-right: 28px;
+        max-width: 110px;
+        padding: 7px 8px;
+        border-radius: 7px;
+        background-color: rgb(20,27,35);
+        color: whitesmoke;
+        border: none;
+        display: inline-block;
+    }
+     #srchicon{
+        margin-left: -11%;
+        border: none;
+        color: white;
+        background-color: rgb(20,27,35);
+        min-height: 38px;
+        border-radius: 0px 5px 5px 0px;
+     }
+     .filterDP{
+        width: 110px;
+        padding: 7px 8px;
+        background-color:rgb(20,27,35);
+        color: white;
+        border-radius: 7px;
+        border: none;
+        margin-right: 10px;
+     }
+     .text-right{
+        margin-left: -2%;
+     }
+     .filterDP li{
+        padding-left: 20px;
+        border-radius: 10px;
+     }
+     .rst{
+        margin-left: 5%;
+     }
+     th,td{
+        padding: 12px;
+     }
+     tr:hover {background-color: rgb(33,42,53);
+    }
+    th{
+        padding: 20px;
+    }
+    .page-btn .page-link{
+        color: #fff;
+        background-color: rgb(20,27,35);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 1px;
+    }
+    
