@@ -1,0 +1,52 @@
+<select className="opt">
+<option>
+  Consumer Product
+</option>
+<option>
+  Industrial Product
+</option>
+<option>
+  Service Product
+</option>
+<option>
+  Others
+</option>
+</select>
+<input
+type="number"
+placeholder="Product Type"
+id="PT"
+onChange={(e) => setproduct_Type(e.target.value)}
+value={product_type}
+required
+/>
+
+
+  {/* <div class="input-group">
+            <div class="input-group-prepend">
+              <button
+                type="button"
+                class="btnn btn-outline-secondary dropdown-toggle"
+                data-toggle="dropdown"
+                onClick={() => set_drp(!drp)}
+              >
+                Select
+              </button>
+              <div
+                class="dropdown-menu"
+                style={drp ? { display: "block" } : { display: "none" }}
+              >
+                <a class="dropdown-item" href="#">
+                  Consumer Product
+                </a>
+                <a class="dropdown-item" href="#">
+                  Industrial Product
+                </a>
+                <a class="dropdown-item" href="#">
+                  Service Product
+                </a>
+                <a class="dropdown-item" href="#">
+                  Others
+                </a>
+              </div>
+            </div> */}

@@ -29,7 +29,7 @@
     overflow: hidden;
     padding: 0px 20px;
 }
-#PN,#OP,#SP,#PT,#DS{
+#PN,#OP,#SP,#DS{
     margin-top: 5%;
     background-color: rgb(33,42,53);
     padding: 18px 20px;
@@ -41,7 +41,13 @@
 }
 #DS{
     padding: 50px 20px;
-    margin-top: 5%;
+    margin-top: 1%;
+    background-color: rgb(33,42,53);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-align: left;
+    width: 100%;
 }
 #crc{
     width: 100%;
@@ -74,4 +80,26 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+#PT{
+    margin-left: 25%;
+    margin-top: -6%;
+    width: 61%;
+    color: white;
+    text-align: left;
+    background-color: rgb(33,42,53);
+    border-radius: 10px;
+    border: none;
+    padding: 18px 20px;
+}
+.btnn{
+    margin-left: -75%;
+    margin-top: 13%;
+    padding: 18px 8px;
+    border-radius: 15px;
+    background-color: rgb(33,42,53);
+    color: white;
+    border: none;
+    width:250%;
+    margin-bottom: 10%;
 }

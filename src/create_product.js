@@ -78,7 +78,7 @@ export default function Createform() {
       product_name: product_name,
       original_price: original_price,
       sale_price: sale_price,
-      product_type: product_type,
+      product_type: parseInt(product_type),
       description: description,
     };
     const result = await axios.post(
@@ -86,6 +86,8 @@ export default function Createform() {
       reqObj,
       config
     );
+    console.log("pro", product_type);
+
     if (result.status) {
       setproduct_Name("");
       setoriginal_Price("");
@@ -159,19 +161,21 @@ export default function Createform() {
             ""
           )}
           <br></br>
-          <input
-            type="number"
-            placeholder="Product Type"
-            id="PT"
-            onChange={(e) => setproduct_Type(e.target.value)}
-            value={product_type}
-            required
-          />
-          {product_type_error ? (
-            <small className="ProductTypeError">{product_type_error}</small>
-          ) : (
-            ""
-          )}
+
+          <form className="app">
+            <select
+              className="btnn"
+              onClick={(e) => setproduct_Type(e.target.value)}
+            >
+              <option>Select Product Type</option>
+              <option value="1">Consumer Product</option>
+              <option value="2">Domestic Product</option>
+              <option value="3">Commercial Product</option>
+              <option value="4">Industrial Product</option>
+              <option value="5">Service Product</option>
+            </select>
+          </form>
+
           <br></br>
           <input
             type="text"

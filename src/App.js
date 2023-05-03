@@ -4,6 +4,7 @@ import Getmethod from "./product";
 import Createform from "./create_product";
 import "./form.css";
 import Welcome from "./welcome";
+import "./welcome.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <Router>
       <main>
         <Routes>
-          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/" element={<Welcome />} />
           <Route path="/product" element={<Getmethod />} />
           <Route path="/create_product" element={<Createform />} />
         </Routes>

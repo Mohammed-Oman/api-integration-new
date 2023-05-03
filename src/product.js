@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import "./App.css";
 import moment from "moment";
-import Createform from "./create_product";
-import "./form.css";
+
 
 export default function Getmethod() {
   const [rowsPerPage] = useState(10);
@@ -181,8 +180,15 @@ export default function Getmethod() {
                     {item.sale_price
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+
+
                   </td>
-                  <td>{item.product_type}</td>
+                  <td>{parseInt(item.product_type)===1 ? "consumer":
+                   parseInt(item.product_type)===2 ?"domestic":
+                   parseInt(item.product_type)===3 ?"commercial":
+                   parseInt(item.product_type)===4 ? "industrial":
+                   parseInt(item.product_type)===5 ? "service":
+                    "others" }</td>
                   <td>
                     {item.description.length > 15
                       ? item.description.slice(0, 20).concat("...")
